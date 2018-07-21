@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./button.css">
+<html>
+<head>
+	<title></title>
+      <style>
+       body, html { margin: 0; padding-left:5%; padding-right:5%; padding-top:2%;}
+    </style> 
+
+</head>
+<body bgcolor="silver">
+<h3>1. Drone Frames</h3>
+<table><tr><td> <! <img src="frames.jpg" ALIGN=”left” HSPACE=”50” VSPACE=”50”></td>
+<td>Frame Styles: Two types of frame styles are common: acro and FPV. Acro frames are what's known as "true X" frames, because the arms form a perfect X shape. FPV frames are different in shape and come in multiple styles such as X and H. Here is a comparison of acro and true X frames. They're also referred to as bus-style frames because of the bus shape in the center. This shape allows for better placing and spreading of the components.</td></tr>
+</table>
+<h3>2. Drone Motors </h3>
+<table><tr><td> <! <img src="motors.JPG"  ALIGN=”left” width="200" height="200"></td>
+<td>Types of Motors: There are two types of motors—inrunners and outrunners. Inrunners are where the rotor is inside the motor, outrunners are when the inside remains stationary and the outside of the motor rotates. Inrunners can spin faster, but outrunners produce more torque to be able to drive the propellers of your quadcopter, which is why outrunners are very common with multirotors.<br><br>The Inverse Law: Follow the inverse law, where higher KV rated motors spin at higher RPMs but swing smaller propellers. Lower KV motors spin at lower RPMs and swing larger propellers. Lower KV motors tend to be larger in size, therefore the first set of numbers would also be larger. Higher KV motors tend to be smaller in size, therefore the first set of numbers would be smaller. You can use this information to determine what motor you need. Larger drone tend to use larger propellers, which mean lower KV motors are used. Smaller drone tend to use smaller props, which means higher KV motors are used. </td></tr></table>
+
+<h3>3. Propellers </h3>
+<table><tr><td> <!- <img src="propellers.JPG" ALIGN=”left” width="200" height="200"> </td>
+<td>Propellers are measured by the diameter and the pitch, and are measured in inches. The diameter is essentially the length of the propeller, and the pitch is how far the propeller would move in space in one revolution. So if you have a propeller that has a pitch of 4.5 inches, in one revolution, the propeller will have moved 4.5 inches. </td></tr></table>
+
+<h3>4. ESCs (Electronic Speed Controllers) </h3>
+<table><tr><td> <! <img src="ESC.jpg" ALIGN=”left” HSPACE=”50” VSPACE=”50”></td>
+<td>ESCs are measured in amps. To determine the ESCs, you want to find the max current draw of the motors, which can be found in the motor datasheet. It is recommended to leave a little headroom and buy an ESC that has a value of at least 5A above the maximum current draw of the motors of drone. </td></tr></table>
+
+<h3>5. Battery </h3>
+All quadcopters almost exclusively use LiPo batteries. This is due to their high discharge rates. But they are also quite delicate in their construction and are very sensitive to overcharging and over-discharging. They can easily puff, making them unusable or even burst into flames. It is not uncommon for houses to catch on fire due to improper handling and care of LiPos, but as long as you treat it with the respect it deserves, you can fly for years without having any trouble.
+
+<h3>6. Transmitter</h3>
+A transmitter is a long-term investment. You want to make sure your transmitter is reliable and that you can trust it because if your transmitter fails on you while you’re flying, your quadcopter can drop out of the sky and potentially injure or even kill someone or damage property. <br>
+Channels: The biggest thing you need to consider is the number of channels. As long as you have enough channels, you’re good to go. The minimum number of channels is 4: one for throttle, one for pitch, one for roll, and one for yaw. More channels are needed for extra functions such as arming with a switch, turning LEDs on and off, etc. I recommend getting at least 6channels so you’re not so restricted.
+
+<h3>7. Receiver</h3>
+Some transmitters come with the receiver, but some don’t. To choose the receiver, you need to consider the number of channels it supports and what type of channel it is, such as PPM, PWM, SBUS, SUMD, DSM2, and DSMX. The differences between them are mainly how the signal travels between the receiver and the flight controller. Out of the list, SBUS seems to be one of the best options, as it is digital and you can use one wire to carry up to 16 channels, and maybe even more, depending on the receiver.
+
+<h3>8. Battery Charger and Power Supply</h3>
+The battery charger needs to be able to charge LiPo batteries. LiPo batteries have to be charged differently to NiMH or NiCd due to their construction. If you charge a LiPo with a NiMH charger, bad things will happen. Chargers have a maximum output current and maximum output power rating. This will determine how quickly a battery will charge. But with LiPos, you don’t want to charge them too quickly. 
+
+<h3>9. NodeMCU</h3>
+NodeMCU is an open source LUA based firmware developed for ESP8266 wifi chip. By exploring functionality with ESP8266 chip, NodeMCU firmware comes with ESP8266 Development board/kit i.e. NodeMCU Development board. Since NodeMCU is open source platform, their hardware design is open for edit/modify/build.<br>
+NodeMCU Dev Kit/board consist of ESP8266 wifi enabled chip. The ESP8266 is a low-cost Wi-Fi chip developed by Espressif Systems with TCP/IP protocol. For more information about ESP8266, you can refer ESP8266 WiFi Module. NodeMCU Development board is featured with wifi capability, analog pin, digital pins and serial communication protocols.
+
+<h3>10. Neo6m GPS</h3>
+    This module has an external antenna and built-in EEPROM.<br>
+    -Interface: RS232 TTL <br>
+    -Power supply: 3V to 5V <br> 
+    -Default baudrate: 9600 bps <br>
+    -Works with standard NMEA sentences<br>
+
+The NEO-6M GPS module is also compatible with other microcontroller boards.<br><br><br>
+The NEO-6M GPS module has four pins: VCC, RX, TX, and GND. The module communicates with the Arduino via serial communication using the TX and RX pins, so the wiring couldn’t be simpler: <br><br>
+NEO-6M GPS Module ----- Wiring <br>
+VCC ------------------------------ 5V <br>
+RX -------------------------------- TX pin defined in the software serial <br>
+TX -------------------------------- RX pin defined in the software serial <br>
+GND ---------------------------- GND <br>
+
+<form>
+<p align="right"> <input type="button" class="w3-button w3-black w3-padding-large" value="BACK TO HOME" onclick="window.location.replace('./f.html')" /> </p>
+</form>
+</body>
+</html>
